@@ -1,0 +1,195 @@
+.why-i-love-you-page {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+}
+
+.reasons-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reasons-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.reasons-list {
+  margin-bottom: 4rem;
+}
+
+.reason-item {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #ff6b9d, #ff8fab);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.reason-item:hover::before {
+  transform: scaleY(1);
+}
+
+.reason-item:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.reason-number {
+  background: linear-gradient(45deg, #ff6b9d, #ff8fab);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+}
+
+.reason-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.reason-text {
+  flex: 1;
+}
+
+.reason-text p {
+  color: #5d4e75;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+.reasons-footer {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.infinite-love {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.infinity-symbol {
+  font-size: 4rem;
+  color: #d63384;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.infinite-love p {
+  color: #8b5a83;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .reason-item {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .reason-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .reason-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .reason-text p {
+    font-size: 1rem;
+  }
+  
+  .infinity-symbol {
+    font-size: 3rem;
+  }
+  
+  .infinite-love {
+    padding: 2rem;
+  }
+  
+  .infinite-love p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-i-love-you-page {
+    padding: 80px 15px 30px;
+  }
+  
+  .reason-item {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .reason-number {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason-icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason-text p {
+    font-size: 0.95rem;
+  }
+  
+  .infinity-symbol {
+    font-size: 2.5rem;
+  }
+  
+  .infinite-love {
+    padding: 1.5rem;
+  }
+  
+  .infinite-love p {
+    font-size: 1rem;
+  }
+}

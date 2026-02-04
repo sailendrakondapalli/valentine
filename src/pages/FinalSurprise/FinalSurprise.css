@@ -1,0 +1,259 @@
+.final-surprise-page {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.confetti-piece {
+  position: absolute;
+  font-size: 1.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.surprise-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.surprise-header {
+  margin-bottom: 3rem;
+}
+
+.surprise-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.surprise-content {
+  margin-bottom: 3rem;
+}
+
+.message-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heart-decoration {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.message-text {
+  margin-bottom: 2rem;
+}
+
+.message-text p {
+  color: #5d4e75;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 400;
+  white-space: pre-line;
+}
+
+.message-signature {
+  border-top: 2px solid rgba(255, 182, 193, 0.3);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.message-signature p {
+  color: #8b5a83;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.surprise-actions {
+  margin-bottom: 4rem;
+}
+
+.confetti-btn {
+  font-size: 1.3rem;
+  padding: 15px 40px;
+  border-radius: 30px;
+}
+
+.surprise-footer {
+  margin-bottom: 3rem;
+}
+
+.love-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  min-width: 150px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-text {
+  color: #8b5a83;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.final-message {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.final-message p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .surprise-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .message-card {
+    padding: 2rem;
+  }
+  
+  .heart-decoration {
+    font-size: 2.5rem;
+  }
+  
+  .message-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .message-signature p {
+    font-size: 1rem;
+  }
+  
+  .confetti-btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+  
+  .love-stats {
+    gap: 2rem;
+  }
+  
+  .stat {
+    padding: 1.5rem;
+    min-width: 120px;
+  }
+  
+  .stat-icon {
+    font-size: 2rem;
+  }
+  
+  .stat-text {
+    font-size: 0.9rem;
+  }
+  
+  .final-message p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-surprise-page {
+    padding: 80px 15px 30px;
+  }
+  
+  .surprise-title {
+    font-size: 2rem;
+  }
+  
+  .message-card {
+    padding: 1.5rem;
+  }
+  
+  .heart-decoration {
+    font-size: 2rem;
+  }
+  
+  .message-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .confetti-btn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+  
+  .love-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .stat {
+    width: 100%;
+    max-width: 200px;
+    padding: 1.2rem;
+  }
+  
+  .final-message {
+    padding: 1.5rem;
+  }
+  
+  .final-message p {
+    font-size: 1.3rem;
+  }
+  
+  .confetti-piece {
+    font-size: 1.2rem;
+  }
+}

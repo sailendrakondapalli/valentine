@@ -1,0 +1,167 @@
+.special-moments-page {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+}
+
+.moments-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.moments-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.moments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.moment-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.moment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b9d, #ff8fab, #ffb3c6);
+}
+
+.moment-card:hover {
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.moment-icon {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.moment-icon span {
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.moment-title {
+  color: #d63384;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.moment-date {
+  color: #ff6b9d;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.moment-description {
+  color: #8b5a83;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.moment-note {
+  background: rgba(255, 182, 193, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border-left: 4px solid #ff6b9d;
+}
+
+.moment-note p {
+  color: #8b5a83;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.moments-footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.love-message p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .moments-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .moment-card {
+    padding: 2rem;
+  }
+  
+  .moment-icon span {
+    font-size: 2.5rem;
+  }
+  
+  .moment-title {
+    font-size: 1.5rem;
+  }
+  
+  .moment-description {
+    font-size: 1rem;
+  }
+  
+  .love-message p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .special-moments-page {
+    padding: 80px 15px 30px;
+  }
+  
+  .moments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .moment-card {
+    padding: 1.5rem;
+  }
+  
+  .moment-icon span {
+    font-size: 2rem;
+  }
+  
+  .moment-title {
+    font-size: 1.3rem;
+  }
+  
+  .moment-note {
+    padding: 1rem;
+  }
+}

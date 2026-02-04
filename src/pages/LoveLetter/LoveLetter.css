@@ -1,0 +1,201 @@
+.love-letter-page {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.letter-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.letter-paper {
+  background: #fefefe;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+  position: relative;
+  border: 1px solid rgba(255, 182, 193, 0.2);
+  min-height: 500px;
+}
+
+.paper-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(transparent 2.9rem, rgba(255, 182, 193, 0.1) 3rem),
+    repeating-linear-gradient(
+      transparent,
+      transparent 1.4rem,
+      rgba(255, 182, 193, 0.1) 1.5rem
+    );
+  background-size: 100% 1.5rem;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+.letter-content {
+  position: relative;
+  z-index: 2;
+}
+
+.letter-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.typewriter-btn,
+.instant-btn {
+  min-width: 250px;
+}
+
+.letter-text {
+  margin-top: 2rem;
+}
+
+.letter-content-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5d4e75;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: #d63384;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.letter-signature {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.signature-line {
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b9d);
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.signature-hearts {
+  font-size: 1.5rem;
+  color: #ff6b9d;
+  animation: heartPulse 2s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.letter-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-message {
+  color: #8b5a83;
+  font-style: italic;
+  font-size: 1.1rem;
+  background: rgba(255, 182, 193, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 182, 193, 0.2);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .letter-paper {
+    padding: 2rem;
+    min-height: 400px;
+  }
+  
+  .letter-content-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .letter-controls {
+    gap: 0.8rem;
+  }
+  
+  .typewriter-btn,
+  .instant-btn {
+    min-width: 200px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  
+  .signature-line {
+    width: 150px;
+  }
+  
+  .signature-hearts {
+    font-size: 1.2rem;
+  }
+  
+  .footer-message {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .love-letter-page {
+    padding: 80px 15px 30px;
+  }
+  
+  .letter-paper {
+    padding: 1.5rem;
+    min-height: 350px;
+  }
+  
+  .letter-content-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .typewriter-btn,
+  .instant-btn {
+    min-width: 180px;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+  
+  .letter-controls {
+    padding: 1.5rem 0;
+  }
+  
+  .signature-line {
+    width: 120px;
+  }
+  
+  .footer-message {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
