@@ -28,11 +28,21 @@
   font-size: 1.5rem;
   font-weight: bold;
   transition: all 0.3s ease;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .nav-logo:hover {
   color: #ff6b9d;
   transform: scale(1.05);
+}
+
+.powered-by {
+  font-size: 0.6rem;
+  color: #8b5a83;
+  font-weight: normal;
+  margin-top: -2px;
+  opacity: 0.8;
 }
 
 .heart-icon {
@@ -133,6 +143,10 @@
   }
 
   .nav-logo span {
+    display: none;
+  }
+  
+  .powered-by {
     display: none;
   }
 }

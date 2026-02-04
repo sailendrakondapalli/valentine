@@ -1,0 +1,8 @@
+Please add your VelvetWeb.jpeg file to this public folder to replace this placeholder.
+
+The favicon should be:
+- Named: VelvetWeb.jpeg
+- Size: 32x32px or 64x64px recommended
+- Format: JPEG (as specified)
+
+This will appear as the website icon in browser tabs.
