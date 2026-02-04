@@ -5,8 +5,6 @@ import './App.css';
 
 // Components
 import Navigation from './components/Navigation/Navigation';
-import VelvetWebFooter from './components/VelvetWebFooter/VelvetWebFooter';
-import FloatingContact from './components/FloatingContact/FloatingContact';
 import Home from './pages/Home/Home';
 import OurStory from './pages/OurStory/OurStory';
 import MemoriesGallery from './pages/MemoriesGallery/MemoriesGallery';
@@ -35,8 +33,6 @@ function App() {
             <Route path="/surprise" element={<FinalSurprise />} />
           </Routes>
         </motion.div>
-        <FloatingContact />
-        <VelvetWebFooter />
       </div>
     </Router>
   );

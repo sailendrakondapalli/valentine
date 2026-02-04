@@ -33,7 +33,6 @@ const Navigation = () => {
         <Link to="/" className="nav-logo">
           <FaHeart className="heart-icon" />
           <span>Our Love Story</span>
-          <div className="powered-by">by VelvetWeb</div>
         </Link>
 
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
