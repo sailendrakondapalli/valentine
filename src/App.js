@@ -6,6 +6,7 @@ import './App.css';
 // Components
 import Navigation from './components/Navigation/Navigation';
 import SubtleFooter from './components/SubtleFooter/SubtleFooter';
+import BackgroundMusic from './components/BackgroundMusic/BackgroundMusic';
 import Home from './pages/Home/Home';
 import OurStory from './pages/OurStory/OurStory';
 import MemoriesGallery from './pages/MemoriesGallery/MemoriesGallery';
@@ -19,6 +20,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
+        <BackgroundMusic />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
